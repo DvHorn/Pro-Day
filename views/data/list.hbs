@@ -1,0 +1,22 @@
+<h3><a class="btn btn-secondary" href="/data"><i class="fa fa-plus">Create New</i></a>Athlete List</h3>
+<table class="table table-striped">
+    <!-- table head -->
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each dataDocument}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.grade}}</td>
+            <!-- icon for deletion/edit -->
+            <td> <a href="/data/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/data/delete/{{this._id}}" onclick="return confirm('Do you want to delete this record?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

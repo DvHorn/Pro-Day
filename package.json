@@ -1,0 +1,25 @@
+{
+  "name": "prodaytest1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon app"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-handlebars": "^5.1.0",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.5.4",
+    "mongoose": "^5.9.14",
+    "monk": "^7.1.2",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
