@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var monk = require('monk');
-var db = monk('mongodb+srv://Davon2425:Horn2425@proday-86a1y.mongodb.net/test?retryWrites=true&w=majority'); //Change back
+var db = monk('mongodb+srv://); //Place db credentials here
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
